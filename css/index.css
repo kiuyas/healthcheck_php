@@ -1,0 +1,157 @@
+/*
+============================================================
+  健康チェックシートアプリ
+  by kiuyas(https://github.com/kiuyas)
+============================================================
+------------------------------
+  入力画面スタイルシート
+------------------------------
+*/
+body {
+    padding: 8px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+  
+/* 共通色設定 */
+dl.items1 {
+    background-color: lightblue;
+}
+
+dl.items2 {
+    background-color: pink;
+}
+
+div.desc1 {
+    background-color: deepskyblue;
+}
+div.desc2 {
+    background-color: salmon;
+}
+
+div.eva1 {
+    background-color: deepskyblue;
+}
+    
+div.eva2 {
+    background-color: salmon;
+}
+
+div.eva3 {
+    background-color: lightgreen;
+}
+
+div.notice {
+    border: 1px solid gray;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+}
+
+button {
+    background-color: lightgray;
+}
+
+div.nameForm {
+    padding: 16px;
+    margin-bottom: 8px;
+    background-color: lightgreen;
+}
+
+@media screen and (min-width:480px) and (max-width:1024px) { 
+    /* ------------------------------------------------------------ for MobilePhone */
+    div {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+    div.desc1, div.desc2 {
+        padding: 32px;
+        font-size: 32pt;
+    }
+
+    div.eva3 {
+        padding: 16px;
+    }
+
+    div.notice {
+        padding: 16px;
+        margin: 16px;
+    }
+
+    div.opt {
+        margin-bottom: 16px;
+    }
+
+    button {
+        width: 100%;
+        height: 160px;
+        margin-top: 16px;
+        font-size: 48px;
+    }
+
+    dl {
+        padding: 16px;
+    }
+
+    dt {
+        font-size: 32px;
+        margin-top: 64px;
+    }
+
+    dd {
+        font-size: 48px;
+    }
+
+    input[type="radio"] {
+        width: 48px;
+        height: 48px;
+    }
+
+    div.nameForm {
+        font-size: 32pt;
+    }
+
+    input[type="text"] {
+        font-size: 32pt;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    /* ------------------------------------------------------------ for PC and Tablet */
+    p.ref {
+        margin: 0;
+    }
+
+    div.eva1, div.eva2 {
+        padding: 8px;
+        margin-bottom: 16px;
+    }
+    
+    div.notice {
+        padding-left: 8px;
+        margin: 8px;
+    }
+    
+    div.opt {
+        margin-bottom: 16px;
+    }
+    
+    div.desc1, div.desc2 {
+        padding: 8px;
+    }
+
+    button {
+        width: 256px;
+        height: 48px;
+        margin-top: 16px;
+    }
+
+    dd {
+        margin-top: 8px;
+    }
+
+    div.eva3 {
+        padding: 8px;
+    }
+}

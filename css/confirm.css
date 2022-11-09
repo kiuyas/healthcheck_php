@@ -1,0 +1,148 @@
+/*
+============================================================
+  健康チェックシートアプリ
+  by kiuyas(https://github.com/kiuyas)
+============================================================
+------------------------------
+  確認・印刷画面スタイルシート
+------------------------------
+*/
+body {
+    padding: 8px;
+    font: 10pt "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+div.general {
+    padding-left: 32px;
+}
+
+table, tr, th, td {
+    border : 1px solid gray;
+    background-color: white;
+    padding: 0;
+    border-spacing: 0;
+    font-size: 10px;
+}
+
+th.q {
+    width: 240px;
+    text-align: left;
+}
+
+th.q1 {
+    background-color: #99eeff;
+}
+
+td.q1 {
+    width: 120px;
+    text-align: center;
+}
+
+td.empty {
+    background-color: gray;
+}
+
+th.q2 {
+    background-color: #ffdddd;
+}
+
+td.q2 {
+    width: 120px;
+    text-align: center;
+}
+
+table.eva1 th {
+    background-color: #99eeff;
+}
+
+table.eva1 td {
+    width: 64px;
+    text-align: center;
+}
+
+table.eva2 th {
+    background-color:  #ffdddd;
+}
+
+table.eva2 td {
+    width: 64px;
+    text-align: center;
+}
+
+table.eva3 th {
+    background-color: rgb(209, 255, 209);
+}
+
+button {
+    background-color: lightgray;
+}
+
+div.nameForm {
+    padding: 16px;
+    margin-bottom: 8px;
+    background-color: lightgreen;
+}
+
+p.ref {
+    margin: 0;
+}
+
+div.eva1, div.eva2 {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+div.notice {
+    padding-left: 8px;
+    margin: 8px;
+}
+
+div.opt {
+    margin-bottom: 16px;
+}
+
+div.desc1, div.desc2 {
+    padding: 8px;
+}
+
+div.eva3 {
+    padding: 0px;
+    margin-bottom: 32px;
+}
+
+button {
+    width: 256px;
+    height: 48px;
+    margin-top: 16px;
+}
+
+.hit {
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+div.controlPanel {
+    background-color: gray;
+    padding: 4px 16px 16px 16px; /*[上][右][下][左]*/
+    margin: 0;
+}
+
+button#btnPrint {
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+@media print{
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    body { margin: 1.6cm; }
+    .controlPanel {
+        display: none;
+    }
+}
